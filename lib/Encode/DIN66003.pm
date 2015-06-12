@@ -27,4 +27,26 @@ Encode::DIN66003 - Encoding according to DIN 66003
 
 L<Encode>
 
+=head1 REPOSITORY
+
+The public repository of this module is
+L<https://github.com/Corion/www-mechanize-phantomjs>.
+
+=head1 SUPPORT
+
+The public support forum of this module is
+L<https://perlmonks.org/>.
+
+=head1 AUTHOR
+
+Max Maischein C<corion@cpan.org>
+
+=head1 COPYRIGHT (c)
+
+Copyright 2015 by Max Maischein C<corion@cpan.org>.
+
+=head1 LICENSE
+
+This module is released under the same terms as Perl itself.
+
 =cut
