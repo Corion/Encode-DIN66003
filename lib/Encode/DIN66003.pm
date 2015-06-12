@@ -9,6 +9,8 @@ XSLoader::load(__PACKAGE__,$VERSION);
 1;
 __END__
 
+=encoding UTF-8
+
 =head1 NAME
  
 Encode::DIN66003 - Encoding according to DIN 66003

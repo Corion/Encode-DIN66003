@@ -11,7 +11,7 @@ use Config;
 # Please edit the following to the taste!
 my $name = 'DIN66003';
 my %tables = (
-         DIN66003_t   => [ 'ucm\din66003.ucm' ],
+         DIN66003_t   => [ 'ucm/din66003.ucm' ],
          );
 
 #### DO NOT EDIT BEYOND THIS POINT!
