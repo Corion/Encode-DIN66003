@@ -2,6 +2,7 @@
 use Test::More;
 
 use Encode 'encode', 'decode';
+use Encode::DIN66003;
 
 my @tests = (
     { known => "Hello World", bytes_66003 => "Hello World" },
