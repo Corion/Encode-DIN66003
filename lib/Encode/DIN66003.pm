@@ -32,7 +32,7 @@ L<Encode>
 =head1 REPOSITORY
 
 The public repository of this module is
-L<https://github.com/Corion/www-mechanize-phantomjs>.
+L<https://github.com/Corion/Encode-DIN66003>.
 
 =head1 SUPPORT
 
