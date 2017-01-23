@@ -54,6 +54,16 @@ WriteMakefile(
           DIST_DEFAULT => 'all tardist',
           },
           MAN3PODS	=> {},
+        META_MERGE => {
+            "meta-spec" => { version => 2 },
+            resources => {
+                repository => {
+                    web => 'https://github.com/Corion/Encode-DIN66003',
+                    url => 'git://github.com/Corion/Encode-DIN66003.git',
+                    type => 'git',
+                }
+            },
+        },
           PREREQ_PM => {
                 'Encode'     => "1.41",
                            },
