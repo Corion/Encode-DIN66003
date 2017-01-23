@@ -29,6 +29,12 @@ Encode::DIN66003 - Encoding according to DIN 66003
 
 L<Encode>
 
+CP1011 (IBM) and CP20106 (Microsoft)
+
+L<https://de.wikipedia.org/wiki/DIN_66003>
+
+L<https://en.wikipedia.org/wiki/Code_page_1011>
+
 =head1 REPOSITORY
 
 The public repository of this module is
