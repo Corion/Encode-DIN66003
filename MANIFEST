@@ -12,5 +12,6 @@ t/99-pod.t
 t/99-todo.t
 t/99-unix-text.t
 t/99-versions.t
+t/DIN66003-identity.t
 t/DIN66003.t
 ucm/din66003.ucm
