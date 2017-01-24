@@ -20,7 +20,7 @@ my ($enc2xs, $encode_h) = ();
 my @path_ext = ('');
 @path_ext = split(';', $ENV{PATHEXT}) if $^O eq 'MSWin32';
 PATHLOOP:
-for my $d (@Config{qw/bin sitebin vendorbin/}, 
+for my $d (@Config{qw/bin sitebin vendorbin/},
        (split /$Config{path_sep}/o, $ENV{PATH})){
     for my $f (qw/enc2xs enc2xs5.7.3/){
         my $path = File::Spec->catfile($d, $f);
@@ -44,26 +44,26 @@ for my $d (@INC){
 print "encode.h is at $encode_h\n";
 
 WriteMakefile(
-              INC		=> "-I$encode_h",
-          NAME		=> 'Encode::'.$name,
-          VERSION_FROM	=> "lib/Encode/$name.pm",
-          OBJECT		=> '$(O_FILES)',
-          'dist'		=> {
-          COMPRESS	=> 'gzip -9f',
-          SUFFIX	=> 'gz',
+          INC       => "-I$encode_h",
+          NAME      => 'Encode::'.$name,
+          VERSION_FROM  => "lib/Encode/$name.pm",
+          OBJECT        => '$(O_FILES)',
+          'dist'        => {
+          COMPRESS  => 'gzip -9f',
+          SUFFIX    => 'gz',
           DIST_DEFAULT => 'all tardist',
           },
-          MAN3PODS	=> {},
-        META_MERGE => {
-            "meta-spec" => { version => 2 },
-            resources => {
-                repository => {
-                    web => 'https://github.com/Corion/Encode-DIN66003',
-                    url => 'git://github.com/Corion/Encode-DIN66003.git',
-                    type => 'git',
-                }
-            },
-        },
+          MAN3PODS  => {},
+          META_MERGE => {
+              "meta-spec" => { version => 2 },
+              resources => {
+                  repository => {
+                      web => 'https://github.com/Corion/Encode-DIN66003',
+                      url => 'git://github.com/Corion/Encode-DIN66003.git',
+                      type => 'git',
+                  }
+              },
+          },
           PREREQ_PM => {
                 'Encode'     => "1.41",
                 'charnames'  => 0,
@@ -140,7 +140,7 @@ Encode_XSEncoding(pTHX_ encode_t *enc)
  SvREFCNT_dec(sv);
 }
 
-MODULE = Encode::$name	PACKAGE = Encode::$name
+MODULE = Encode::$name  PACKAGE = Encode::$name
 PROTOTYPES: DISABLE
 BOOT:
 {
@@ -185,7 +185,7 @@ sub postamble
     }
     my $plib   = $self->{PERL_CORE} ? '"-I$(PERL_LIB)"' : '';
     my $ucopts = '-"Q"';
-    $str .=  
+    $str .=
         qq{\n\t\$(PERL) $plib $enc2xs $ucopts -o \$\@ -f $table.fnm\n\n};
     open (FILELIST, ">$table.fnm")
         || die "Could not open $table.fnm: $!";
