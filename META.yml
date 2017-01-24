@@ -19,6 +19,7 @@ no_index:
     - inc
 requires:
   Encode: '1.41'
+  charnames: '0'
 resources:
   repository: git://github.com/Corion/Encode-DIN66003.git
-version: '0.02'
+version: '0.03'

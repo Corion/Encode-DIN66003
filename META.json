@@ -32,7 +32,8 @@
       },
       "runtime" : {
          "requires" : {
-            "Encode" : "1.41"
+            "Encode" : "1.41",
+            "charnames" : "0"
          }
       }
    },
@@ -44,5 +45,5 @@
          "web" : "https://github.com/Corion/Encode-DIN66003"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
