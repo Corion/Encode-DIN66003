@@ -3,6 +3,7 @@ use warnings;
 use strict;
 use File::Find;
 use Test::More tests => 2;
+use blib 'blib';
 
 =head1 PURPOSE
 
