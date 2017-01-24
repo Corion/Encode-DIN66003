@@ -66,7 +66,8 @@ WriteMakefile(
         },
           PREREQ_PM => {
                 'Encode'     => "1.41",
-                           },
+                'charnames'  => 0,
+          },
           # OS 390 winges about line numbers > 64K ???
           XSOPT => '-nolinenumbers',
           );

@@ -1,6 +1,7 @@
 #!perl -w
+use strict;
 use Test::More;
-
+use charnames ':full';
 use Encode 'encode', 'decode';
 
 my @tests = (
