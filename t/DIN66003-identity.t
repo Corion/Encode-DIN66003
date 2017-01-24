@@ -3,6 +3,7 @@ use strict;
 use Test::More;
 use charnames ':full';
 use Encode 'encode', 'decode';
+use Encode::DIN66003;
 
 my @tests = (
     { known => "Hello World", bytes_66003 => "Hello World" },
