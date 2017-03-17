@@ -1,7 +1,7 @@
 ---
-abstract: unknown
+abstract: 'Encoding according to DIN 66003'
 author:
-  - unknown
+  - 'Max Maischein <corion@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: '0'
 configure_requires:
@@ -20,6 +20,8 @@ no_index:
 requires:
   Encode: '1.41'
   charnames: '0'
+  perl: '5.006'
 resources:
+  license: http://dev.perl.org/licenses/
   repository: git://github.com/Corion/Encode-DIN66003.git
 version: '0.03'

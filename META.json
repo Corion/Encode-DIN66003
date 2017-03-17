@@ -1,7 +1,7 @@
 {
-   "abstract" : "unknown",
+   "abstract" : "Encoding according to DIN 66003",
    "author" : [
-      "unknown"
+      "Max Maischein <corion@cpan.org>"
    ],
    "dynamic_config" : 1,
    "generated_by" : "ExtUtils::MakeMaker version 7.24, CPAN::Meta::Converter version 2.143240",
@@ -33,12 +33,16 @@
       "runtime" : {
          "requires" : {
             "Encode" : "1.41",
-            "charnames" : "0"
+            "charnames" : "0",
+            "perl" : "5.006"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ],
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/Corion/Encode-DIN66003.git",
